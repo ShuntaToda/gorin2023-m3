@@ -1,0 +1,184 @@
+:root {
+    --object-size: 64px;
+}
+
+@font-face {
+    font-family: "MaruMinya";
+    src: url(../font/x12y12pxMaruMinya.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    image-rendering: crisp-edges;
+    margin: 0;
+    font-family: "MaruMinya", "游ゴシック", "YuGothic", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    font-weight: 500;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    width: 100%;
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 8px;
+    border: solid 3px #000;
+}
+
+.button {
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 24px;
+    background: #FFF;
+    transition: .2s;
+    border: solid 3px #000;
+
+    &:hover {
+        background: #666;
+        color: #FFF;
+    }
+}
+
+.main {
+    height: 100%;
+}
+
+.wrap {
+    display: grid;
+    place-items: center;
+    background-color: #666;
+    width: 1024px;
+    height: 630px;
+}
+
+.login, .select, .profile, .result {
+    background: #FFF;
+    padding: 14px;
+    border: solid 5px #000;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+}
+
+.select {
+    width: 500px;
+    max-width: 500px;
+}
+
+.input-list {
+    display: grid;
+    gap: 14px;
+}
+
+.input-group dt {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.buttons-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.buttons-item {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.profile-buttons {
+    margin-bottom: 14px;
+}
+
+.total-play-time {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 28px;
+}
+
+.game {
+    position: relative;
+}
+
+.time {
+    font-weight: bold;
+    font-size: 64px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: -64px;
+}
+
+.field {
+    position: relative;
+    background-image: url(../images/floor01.png);
+    background-position: left top;
+    top: 20px;
+}
+
+.object {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: var(--object-size);
+    height: var(--object-size);
+    overflow: hidden;
+    position: absolute;
+}
+
+.player {
+    background-image: url(../images/player01.gif);
+}
+
+.flag {
+    background-image: url(../images/flag01.gif);
+}
+
+.block {
+    background-image: url(../images/block01.png);
+}
+
+.wall {
+    background-image: url(../images/wall01.png);
+}
+
+.ranking {
+    width: fit-content;
+    margin: auto;
+    font-size: 28px;
+}
+
+.ranking-item {
+    margin-bottom: 20px;
+}
+
+.ranking-number {
+    display: inline-block;
+    width: 30px;
+}
+
+.ranking-user {
+    display: inline-block;
+    width: 90px;
+}
+
+.ranking-item-active {
+    color: red;
+}

@@ -1,0 +1,1 @@
+export const path = "http://api.skilljapan.info"
